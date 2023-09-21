@@ -7,16 +7,27 @@
 </head>
 
 <body>
-    <p id="p1">Mouse drag kesini nanti ke hide</p>
+    <p id="p1">Mouse drag kesini nanti ke Hide</p>
+    <br>
+    <br>
+    <h1 id="h2">Mouse drag kesini nanti keluar Alert</h1>
 </body>
 <script>
     $(document).ready(function () {
         $("#p1").mouseenter(function () {
             $(this).hide();
         });
+        
         $("#p1").mouseleave(function(){
             $(this).show();
         });
+
+        $("#h2").hover(function(){
+            alert("You entered h2!");
+        },
+        function(){
+            alert("Bye! You now leave h2!");
+        }); 
     });
 </script>
 
