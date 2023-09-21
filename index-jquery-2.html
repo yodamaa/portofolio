@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <p id="p1">Mouse drag kesini nanti ke hide</p>
+</body>
+<script>
+    $(document).ready(function () {
+        $("#p1").mouseenter(function () {
+            $(this).hide();
+        });
+        $("#p1").mouseleave(function(){
+            $(this).show();
+        });
+    });
+</script>
+
+</html>
